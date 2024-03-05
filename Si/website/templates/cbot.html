@@ -1,0 +1,37 @@
+{% extends "base.html" %} <!--Jinja to extend base template-->
+{% block header %}
+ <title> Bot </title> 
+ <link rel="stylesheet" href="{{url_for('static',filename='css/cbot_style.css')}}">
+ {% endblock %}
+{% block content %}  <!--Jinja body overwritten -->
+<center>
+    <h1>Le Bot</h1>
+    <h6 class="cosmos"> "Converse with Si"</h6>
+</center>
+    <div class="container">
+        <div class="box" onload="scrollToBottom()">
+            <div class="Bot" id="botMsg">
+                <p id="text">Bot: Hi! I'm Si. How can I help you? </p>  
+            </div>
+            {% for input in user.bot_data %} <!--Jinja to access "user" variable -->
+                {% if input.u_id == user.id %}
+                <div class="User" id="userMsg">
+                    <p id="text">{{ user.name }}: {{ input.user_input }} </p>
+                </div>
+                    <div class="Bot" id="botMsg">
+                            <p id="text"> Si: {{ input.bot_res }} </p>  
+                    </div>
+                {% endif %}
+            {% endfor %}
+            <form method="POST" action='/bot'>
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="Send Message.." id="userInp" name="userInp" onfocus=this.value=''>
+                    <input type="Submit" value="Send" class="btn btn-danger" id="send">
+                </div>
+            </form>
+        </div>
+    </div>
+{% endblock %}
+{% block javascript %}
+<script type="text/javascript" src="{{url_for('static',filename='js/bot_java.js')}}"></script>
+{% endblock %}

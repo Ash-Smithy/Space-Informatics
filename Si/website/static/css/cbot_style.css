@@ -1,0 +1,43 @@
+body {
+    background-image: linear-gradient(to right,#2193b0,#6dd5ed);
+ }
+ 
+ h1 {
+    color: rgba(245, 245, 245, 0.578);
+    text-shadow: 3px 3px 15px rgba(255, 255, 255, 0.85);
+    background-color: #02090c;
+    font-family: 'Cairo', sans-serif;
+    text-align: center;
+    font-size: 80px;
+    letter-spacing: 10px;
+  }
+  
+  .box {
+    border: 2px solid black;
+    padding: 15px;
+  }
+
+  #botMsg {
+    margin: 4px 0px;
+    border-radius: 10px;
+    background-color: rgb(221, 221, 221);
+  }
+
+  #userMsg {
+    margin: 4px 0px;
+    border-radius: 10px;
+    background-color: ghostwhite;
+  }
+
+  #text {
+    padding: 5px;
+  }
+
+  .cosmos {
+    color: #02090c;
+    font-family: 'Cairo', sans-serif;
+    text-align: center;
+    font-size: 27px;
+    letter-spacing: 10px;
+    height: fit-content;
+}

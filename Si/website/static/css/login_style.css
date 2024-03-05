@@ -1,0 +1,32 @@
+body {
+    background-image: linear-gradient(to right,#0f0c29,#302b63,#24243e);
+}
+#Si {
+    margin: 30px;
+    text-align: center;
+    font-size: 50px;
+    color: white;
+    font-family: 'Comfortaa', cursive;
+}
+h1 {
+    color: white;
+    font-family: 'Cairo', sans-serif;
+}
+
+label 
+{
+    font-size: 18px;
+    font-family: 'Antic', sans-serif;
+    letter-spacing: 0.7px;
+    padding: 8px 0px;
+    color: white;
+}
+
+.acc {
+    text-align: center;
+    color: #fff;
+}
+
+#txt {
+    opacity: 0.7;
+}
