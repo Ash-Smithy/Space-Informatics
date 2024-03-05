@@ -1,8 +1,5 @@
-# Space-Informatics: Si, An Intelligent Chatbot.
-Space Informatics is a web-based project under development, in which Si is a simple chatbot that users can interact with.
-This project consists of development and deployment of the early stage of Si to have basic conversation-based interactions with users.
-Si was written in python mainly using Tensorflow, NLTK following Feed-Forward Neural Theory.
-Each user is required to login to create unique interaction sessions with the chatbot.
+# Space-Informatics
+Space Informatics is a web-based project under development.
 
 ### Few Screenshots of the project
 
